@@ -1,24 +1,25 @@
-import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
+import Link from "next/link";
+import {Layout} from "../components/layout";
+import React from "react";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Semenov town</title>
-        <link rel="icon" href="/favicon.png" />
-      </Head>
+    <Layout title={"Semenov town"}>
 
-      <main className={styles.main}>
+      <main >
         <h1 className={styles.title}>
-           Маленький <a href="https://nextjs.org">Париж !</a>
+           Маленький <a href="https://semenov.nnov.ru/">Париж !</a>
         </h1>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Особенности нашего города  &rarr;</h3>
-            <p>Маленькие истории  </p>
-          </a>
+          <Link href={`/town/semenov`}>
+            <a className={styles.card}>
+              <h3>Особенности нашего города  &rarr;</h3>
+              <p>Маленькие истории  </p>
+            </a>
+          </Link>
+
 
           <a href="https://nextjs.org/learn" className={styles.card}>
             <h3> Почему Семенов столица золотой Хохломы  &rarr;</h3>
@@ -48,6 +49,6 @@ export default function Home() {
       <footer className={styles.footer}>
         <h1>Ушаков Кирилл 2020</h1>
       </footer>
-    </div>
+    </Layout>
   )
 }
