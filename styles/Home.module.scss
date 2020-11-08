@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 
 .main {
@@ -14,6 +15,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: goldenrod;
+}
+.main h1 {
+  color:gold;
+  margin-top: -15px;
+
 }
 
 .footer {
@@ -23,6 +30,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: gold;
 }
 
 .footer img {
@@ -36,7 +44,7 @@
 }
 
 .title a {
-  color: #0070f3;
+  color: gold;
   text-decoration: none;
 }
 
@@ -78,6 +86,7 @@
   flex-wrap: wrap;
   max-width: 800px;
   margin-top: 3rem;
+
 }
 
 .card {
@@ -85,18 +94,20 @@
   flex-basis: 45%;
   padding: 1.5rem;
   text-align: left;
-  color: inherit;
+  color: gold;
   text-decoration: none;
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
+
 }
 
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: black;
+  border-color: black;
+  background: gold;
 }
 
 .card h3 {

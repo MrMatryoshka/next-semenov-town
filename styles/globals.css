@@ -4,8 +4,13 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /*background-image: url("https://souvenirs-nn.ru/wp-content/uploads/2019/06/khokhloma-e1481297441689.png") ;*/
+  background-image: url("https://w-dog.ru/wallpapers/15/10/301521721065271/chernyj-temnyj-starinnye-model-gradient-vektor-tekstury-fon-vintazh-retro-uzor-ornament.jpg");
+  background-repeat:no-repeat ;
 }
-
+html{
+  background:black;
+}
 a {
   color: inherit;
   text-decoration: none;
