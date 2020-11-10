@@ -20,14 +20,16 @@ export default function Home() {
             </a>
           </Link>
 
+          <Link href={'/hohloma/hohloma'}>
+            <a className={styles.card}>
+              <h3> Почему Семенов столица золотой Хохломы ?  &rarr;</h3>
+              <p>Легенды происхождения </p>
+            </a>
+          </Link>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3> Почему Семенов столица золотой Хохломы  &rarr;</h3>
-            <p>Легенды происхождения </p>
-          </a>
 
           <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
+            href={''}
             className={styles.card}
           >
             <h3>Список интересных мест для посещения  &rarr;</h3>

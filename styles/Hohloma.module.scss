@@ -1,0 +1,35 @@
+.hohloma {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  img {
+    height: 20rem;
+  }
+
+  a {
+    color: #fafafa;
+    font-size: 50px;
+    margin-bottom: 2rem;
+
+  }
+  h1{
+    color: #fafafa;
+  }
+  p{
+    color: #fafafa;
+  }
+  button{
+    color: black;
+    border-color: black;
+    background: gold;
+    font-size: 20px;
+
+  }
+}
+
+
+

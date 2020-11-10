@@ -5,9 +5,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "serve": "concurrently \" npm run dev \" \" npm run mock \" ",
+    "mock": "json-server -w db.json -p 4200 -d 1750"
   },
   "dependencies": {
+    "concurrently": "^5.3.0",
+    "json-server": "^0.16.2",
     "next": "10.0.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
