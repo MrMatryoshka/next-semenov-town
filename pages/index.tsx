@@ -1,10 +1,11 @@
+// @ts-ignore
 import styles from '../styles/Home.module.scss'
 import Link from "next/link";
 import {Layout} from "../components/layout";
 import React from "react";
 
 export default function Home() {
-  return (
+    return (
     <Layout title={"Semenov town"}>
 
       <main >
@@ -27,24 +28,6 @@ export default function Home() {
             </a>
           </Link>
 
-
-          <a
-            href={''}
-            className={styles.card}
-          >
-            <h3>Список интересных мест для посещения  &rarr;</h3>
-            <p> Достопримечательности района и города </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3> О Нас &rarr;</h3>
-            <p>
-              контакты , место находнения.
-            </p>
-          </a>
         </div>
       </main>
 

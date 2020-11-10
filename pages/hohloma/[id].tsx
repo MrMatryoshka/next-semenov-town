@@ -3,8 +3,13 @@ import {Layout} from "../../components/layout";
 import Link from "next/link";
 import {useRouter} from "next/router";
 import classes from "./../../styles/Hohloma.module.scss";
+import {MyPost} from "../../interface/post";
 
-export default function Post({post:serverPost}) {
+interface PostPage {
+    post:MyPost
+}
+
+export default function Post({post:serverPost}: PostPage) {
 
     const [post ,setPost] = useState(serverPost);
     const router = useRouter()
@@ -46,7 +51,7 @@ export default function Post({post:serverPost}) {
 export  async  function getServerSideProps (context){
 
     const response = await fetch(`http://localhost:4200/hohloma/${context.query.id}`);
-    const post = await response.json()
+    const post: MyPost[] = await response.json()
 
     return {
         props:{post}

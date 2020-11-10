@@ -2,9 +2,13 @@ import {useState,useEffect} from 'react';
 import {Layout} from "../../components/layout";
 import classes from "./../../styles/Hohloma.module.scss";
 import Link from "next/link";
+import {MyPost} from "../../interface/post";
 
+interface PostPage {
+    posts:MyPost[]
+}
 
-export default function Hohloma ({posts:serverPosts}){
+export default function Hohloma ({posts:serverPosts}: PostPage){
     const [posts, setPosts] = useState(serverPosts)
     useEffect(() => {
         async function load() {
@@ -27,7 +31,7 @@ export default function Hohloma ({posts:serverPosts}){
                                 <a>{post.title} &rarr;</a>
 
                             </Link>
-                            <img src={post.imageUrl1} alt={post.id}/>
+                            <img src={post.imageUrl1} alt={post.alt}/>
                         </div>
                     ))}
                 </div>
@@ -40,7 +44,7 @@ export  async  function getServerSideProps (context) {
         return {posts:null}
     }
     const response = await fetch(`http://localhost:4200/hohloma`);
-    const posts = await response.json()
+    const posts : MyPost[] = await response.json()
 
     return {
         props:{posts}
